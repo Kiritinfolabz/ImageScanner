@@ -33,7 +33,7 @@ try:
     if st.button("Login"):
         if data[data["Email"] == email]["Password"].values[0] == password:
             st.success("Login successful")
-            st.markdown(f'<meta http-equiv="refresh" content="2;url=http://localhost:8501/main">', unsafe_allow_html=True)
+            st.markdown(f'<meta http-equiv="refresh" content="2;url=https://imagescanner.streamlit.app/main">', unsafe_allow_html=True)
             st.header("Redirecting...")
         else:
             st.error("Invalid Email Or Password")
@@ -41,5 +41,5 @@ except:
     st.warning("Enter email And Password")
 
 
-link='[Register](https://imagescanner.streamlit.app/~/+/?pages=Signup.py)'
+link='[Register](https://imagescanner.streamlit.app/Signup)'
 st.markdown(link,unsafe_allow_html=True)

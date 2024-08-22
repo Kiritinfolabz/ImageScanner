@@ -537,7 +537,7 @@ elif choose =="Data Analysis (Tumor)":
 elif choose == "Data Visualization (Tumor)":
     data_visualization_brain()
 elif choose == "LOGOUT":
-    st.markdown(f'<meta http-equiv="refresh" content="2;url=http://localhost:8501/Login">', unsafe_allow_html=True)
+    st.markdown(f'<meta http-equiv="refresh" content="2;url=https://imagescanner.streamlit.app/Login">', unsafe_allow_html=True)
     st.header("Redirecting...")
 elif choose =="Crop Data anaysis and visualziation":
     crop()

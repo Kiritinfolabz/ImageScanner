@@ -60,10 +60,10 @@ if st.button("Submit"):
             df.to_csv("data.csv", index=False, mode='a', header=False)
             # Display success message
             st.success("Sign up successful!")
-            st.markdown(f'<meta http-equiv="refresh" content="2;url=http://localhost:8501/Login">',
+            st.markdown(f'<meta http-equiv="refresh" content="2;url=https://imagescanner.streamlit.app/Login">',
                         unsafe_allow_html=True)
             st.header("Redirecting...")
 
 # Provide a link to the login page
-login_link = '[LogIn here](http://localhost:8501/Login)'
+login_link = '[LogIn here](https://imagescanner.streamlit.app/Login)'
 st.markdown(login_link, unsafe_allow_html=True)
